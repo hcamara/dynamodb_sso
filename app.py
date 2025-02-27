@@ -32,7 +32,7 @@ def signup():
         dbHelper.add_user({'email': email, 'password': dbHelper.hash_password(password), 'name':name, 'mobile': mobile})
         return {"message": "Ajouté avec succès !"}
     except:
-        return {"message": "Une erreur est survénue !"}
+        return {"message": "Une erreur est survénue!"}
 
 if __name__ == '__main__':
     app.run("0.0.0.0", port=8081, debug=True)
