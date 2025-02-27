@@ -30,7 +30,7 @@ def signup():
         email = request.form.get("email")
         password = request.form.get("pswd")
         dbHelper.add_user({'email': email, 'password': dbHelper.hash_password(password), 'name':name, 'mobile': mobile})
-        return {"message": "Ajouté avec succès !"}
+        return {"message": "Ajouté avec succès!"}
     except:
         return {"message": "Une erreur est survénue!"}
 
